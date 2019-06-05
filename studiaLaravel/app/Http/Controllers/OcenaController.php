@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Ocena;
 use Illuminate\Http\Request;
-use App\Http\Requests\StoreFormValidation;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreFormOcenyValidation;
 
 class OcenaController extends Controller
 {
@@ -76,7 +77,7 @@ class OcenaController extends Controller
      * @param  \App\Ocena  $ocena
      * @return \Illuminate\Http\Response
      */
-    public function update(StoreFormValidation $request, Ocena $ocena)
+    public function update(StoreFormOcenyValidation $request, Ocena $ocena)
     {
         /*
         if($ocena == null)

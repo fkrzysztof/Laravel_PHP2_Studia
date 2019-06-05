@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Przedmiot;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreFormValidation;
+use App\Http\Requests\StoreFormPrzedmiotyValidation;
 
 
 class PrzedmiotController extends Controller
@@ -82,7 +82,7 @@ class PrzedmiotController extends Controller
      * @return \Illuminate\Http\Response
      */
     //public function update(Request $request, Przedmiot $przedmiot)
-    public function update(StoreFormValidation $request, Przedmiot $przedmiot)
+    public function update(StoreFormPrzedmiotyValidation $request, Przedmiot $przedmiot)
     {
         //stara wersja metody
         /*
